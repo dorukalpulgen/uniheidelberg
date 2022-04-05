@@ -61,41 +61,29 @@ int main(){
 /* Aufgabe 4.2 (c)
 std::vector<double> reversed(const std::vector<double>& v){
     int k;
-    double temp;
     std::vector<double> vCopy(v.size());
-
     for(int i = v.size()-1; i>=0; i--){
         k = vCopy.size()-i-1;
         vCopy[k] = v[i];
-
     }
-
     return vCopy;
-
-
 }
-
 int main(){
     std::vector<double> v(10);
-    int i;
 
+    int i;
     for(i = 0; i<v.size(); i++){ // Randomize
         v[i] = rand() % 1000;
     }
-
     std::cout << "Randomized vector: " << std::endl;
     for(i = 0; i<v.size(); i++){
         std::cout << i+1 << ": " << v[i] << std::endl;
     }
-
     v = reversed(v);
-
     std::cout << "Reversed vector: " << std::endl;
     for(i = 0; i<v.size(); i++){
         std::cout << i+1 << ": " << v[i] << std::endl;
     }
-
-
     return 0;
 }
 */
