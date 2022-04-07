@@ -1,0 +1,17 @@
+# Set minimum required CMake version
+cmake_minimum_required(VERSION 3.5)
+
+# Start project and set its name to ipk-demo
+project(Beispiel)
+
+# Force compiler to run in C++14 mode
+set(CMAKE_CXX_STANDARD 14)
+
+# Create executable programs
+add_executable(readvector readvector.cpp)
+add_executable(uniform uniform.cpp)
+add_executable(normal normal.cpp)
+
+add_library(statistics statistics.hh)
+add_library(io io.hh)
+
